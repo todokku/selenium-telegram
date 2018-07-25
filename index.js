@@ -8,7 +8,7 @@ app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-let port = process.env.PORT || 5555;
+let port = process.env.PORT || 88;
 
 app.get('/', (req, res, next) => {
     res.json({"result": "ok"});
